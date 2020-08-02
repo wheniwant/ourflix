@@ -4,6 +4,7 @@ import './index.css';
 import Home from './Pages/Home';
 import CadastroVideo from './Pages/Cadastro/Video'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import CadastroCategoria from './Pages/Cadastro/Categoria';
 
 
 // Mudar página 404 
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/cadastro/categoria" component={CadastroCategoria} />
       <Route component={Pagina404} />
 
     </Switch>
